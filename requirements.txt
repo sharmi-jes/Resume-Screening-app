@@ -3,3 +3,9 @@ numpy
 matplotlib
 seaborn
 nltk
+Flask
+pyPDF2
+python-docx
+joblib
+jsonify
+py
