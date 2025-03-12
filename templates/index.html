@@ -1,1 +1,123 @@
-<h1>WElcome to the web page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Role Predictor</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        .highlight {
+            background: linear-gradient(to right, #ffdd57, #ff9f43);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+            max-width: 700px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease-out 0.5s forwards;
+        }
+
+        /* Get Started Button */
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #4e54c8;
+            background-color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease-out 0.8s forwards;
+        }
+        .btn:hover {
+            background-color: #ffdd57;
+            color: black;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>
+                Unlock Your Career with <br>
+                <span class="highlight">AI-Powered Resume Role Prediction</span>
+            </h1>
+            <p>
+                Our AI analyzes your skills and experience to predict the **best-fit job role** with **99% accuracy!**
+            </p>
+            <a href="/predict" class="btn">Get Started</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            © <span id="year"></span> RolePredictAI. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
+
+
+
+
+

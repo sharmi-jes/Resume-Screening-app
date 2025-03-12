@@ -66,13 +66,16 @@
         </div>
     </form>
 
-    <div class="result-section" id="result-section" style="display: block;">
+    {% if predicted_role %}
+    <div class="result-section" id="result-section">
         <h2>Predicted Role:</h2>
         <p>{{ predicted_role }}</p>
     </div>
-    
+    <script>
+        document.getElementById("result-section").style.display = "block";
+    </script>
+    {% endif %}
 </div>
 
 </body>
 </html>
-

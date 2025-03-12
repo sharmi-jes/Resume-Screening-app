@@ -8,4 +8,4 @@ pyPDF2
 python-docx
 joblib
 jsonify
-py
+scikit-learn

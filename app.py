@@ -77,7 +77,7 @@ def predict_data():
      predicted_role=label_encoder.inverse_transform([preds])[0]
 
     # Return the result
-     return render_template('home.html', predicted_role=predicted_role)
+    return render_template('home.html', predicted_role=predicted_role)
 
 
 if __name__ == "__main__":
